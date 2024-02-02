@@ -1,0 +1,57 @@
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 12px;
+}
+
+.copy {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.flist {
+  list-style: none;
+  padding: 0;
+}
+
+.fListItems {
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 10px;
+  }
+  
+  .fLists {
+    flex-wrap: wrap;
+  }
+  
+  .flist {
+    width: 50%;
+  }
+  
+  .fListItems {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flist {
+    width: 100%;
+  }
+  
+  .copy {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,112 @@
+.banner1 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_5QxznCEMc7Y1BhsnlfcSjKuCqfGSWs43daN7pEMrqeXOWi6wibqWMAlMEw2fLKJBpA&usqp=CAU);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.listSearch {
+
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.lsItem>label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.lsItem>input {
+  height: 30px;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.lsItem>span {
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lsOptions {
+  padding: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 13px;
+}
+
+.lsOptionInput {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.listSearch>button {
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+  
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .listWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listSearch {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .listResult {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .listSearch {
+    margin-left: 0;
+  }
+}
